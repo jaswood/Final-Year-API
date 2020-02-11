@@ -1,0 +1,22 @@
+{
+  "name": "final-year-api",
+  "version": "1.0.0",
+  "description": "PRCO 2020 Final Year Project 10546126",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaswood/Final-Year-API.git"
+  },
+  "author": "Joe Wood: 10546126",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaswood/Final-Year-API/issues"
+  },
+  "homepage": "https://github.com/jaswood/Final-Year-API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

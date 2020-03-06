@@ -12,14 +12,14 @@ jobs:
             - run: npm install
             - run: npm test
 
-  deploy:
-    docker:
-      - image: google/cloud-sdk
-    steps:
-          - run: |
-              echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
-              gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-              gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+
+      docker:
+        - image: google/cloud-sdk
+      steps:
+            - run: |
+                echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
+                gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+                gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
 workflows:
     build-and-test:
       jobs:
